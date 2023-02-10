@@ -1,4 +1,25 @@
-# FlightApp
+# FlightApp - Tutorials Angular
+
+## Angular installieren
+`npm install -g @angular/cli`
+`ng new flight-app`
+
+- cd flight-app
+`ng serve -o`
+
+### TODO
+app.component.ts: TypeScript-Datei, die das Verhalten der Komponente definiert.
+
+app.component.html: HTML-Datei mit der Struktur der Komponente.
+
+app.component.scss: Datei mit lokalen Styles für die Komponente. Allgemeine Styles können in die besprochene styles.scss eingetragen werden.
+
+## Bootstrap installieren
+`ng add @angular-architects/paper-design`
+
+### Todo
+Das generiert eine NavbarComponent und eine SideBarComponent für die Navigation.
+-
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.
 
