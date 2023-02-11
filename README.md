@@ -1,4 +1,4 @@
-# FlightApp - Tutorials Angular
+# FlightApp - Tutorials Angular 01
 
 ## Angular installieren
 `npm install -g @angular/cli`
@@ -17,10 +17,24 @@ app.component.scss: Datei mit lokalen Styles für die Komponente. Allgemeine Sty
 ## Bootstrap installieren
 `ng add @angular-architects/paper-design`
 
-### Todo
-Das generiert eine NavbarComponent und eine SideBarComponent für die Navigation.
--
+### TODO
+das generiert eine NavbarComponent und eine SideBarComponent für die Navigation.
 
+# FlightApp - Tutorials Angular 02
+
+## Angular-Komponente erzeugen
+`ng generate component flight-search`
+oder
+`ng g c flight-search`
+
+### Bonus: Debuggen mit Visual Studio Code
+-Öffnen Sie eine beliebige .ts-Datei.
+-Wählen Sie in Visual Studio Code den Befehl Run/Start Debugging oder drücken Sie F5.
+-Falls Visual Studio Code Sie nach einer Umgebung (Environment) für das Debugging fragt, wählen Sie Chrome aus.
+-Visual Studio Code generiert nun eine Datei launch.json und zeigt diese an.
+-Korrigieren Sie in der Datei launch.json die angezeigte URL auf http://localhost:4200:
+
+#
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.
 
 ## Development server
@@ -46,3 +60,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+### Aspekte von Angular
+https://www.angulararchitects.io/
