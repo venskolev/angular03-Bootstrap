@@ -28,11 +28,11 @@ oder
 `ng g c flight-search`
 
 ### Bonus: Debuggen mit Visual Studio Code
--Öffnen Sie eine beliebige .ts-Datei.
--Wählen Sie in Visual Studio Code den Befehl Run/Start Debugging oder drücken Sie F5.
--Falls Visual Studio Code Sie nach einer Umgebung (Environment) für das Debugging fragt, wählen Sie Chrome aus.
--Visual Studio Code generiert nun eine Datei launch.json und zeigt diese an.
--Korrigieren Sie in der Datei launch.json die angezeigte URL auf http://localhost:4200:
+- Öffnen Sie eine beliebige .ts-Datei.
+- Wählen Sie in Visual Studio Code den Befehl Run/Start Debugging oder drücken Sie F5.
+- Falls Visual Studio Code Sie nach einer Umgebung (Environment) für das Debugging fragt, wählen Sie Chrome aus.
+- Visual Studio Code generiert nun eine Datei launch.json und zeigt diese an.
+- Korrigieren Sie in der Datei launch.json die angezeigte URL auf http://localhost:4200:
 
 #
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.
