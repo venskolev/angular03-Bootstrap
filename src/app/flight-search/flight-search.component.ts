@@ -1,7 +1,6 @@
-import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
-
 import { Component, OnInit } from '@angular/core';
 import { Flight } from '../flight';
+import { FlightService } from '../flight.service';
 
 @Component({
     selector: 'app-flight-search',
@@ -15,7 +14,12 @@ export class FlightSearchComponent implements OnInit {
     flights: Array<Flight> = [];
     selectedFlight: Flight | null = null;
 
-    constructor(private http: HttpClient) {
+    basket: { [key: number]: boolean } = {
+        3: true,
+        5: true
+    };
+
+    constructor(private flightService: FlightService) {
     }
 
     ngOnInit(): void {
@@ -23,27 +27,19 @@ export class FlightSearchComponent implements OnInit {
 
     search(): void {
 
-        const url = 'http://demo.ANGULARarchitects.io/api/flight';
+    this.flightService.find(this.from, this.to).subscribe({
+        next: (flights) => {
+            this.flights = flights;
+        },
+        error: (err) => {
+            console.debug('Error', err);
+        }
+    });
 
-        const headers = new HttpHeaders()
-            .set('Accept', 'application/json');
-
-        const params = new HttpParams()
-            .set('from', this.from)
-            .set('to', this.to);
-
-        this.http.get<Flight[]>(url, {headers, params}).subscribe({
-            next: (flights) => {
-                this.flights = flights;
-            },
-            error: (err) => {
-                console.error('Error', err);
-            }
-        });
     }
 
     select(f: Flight): void {
-        this.selectedFlight = f;
+    this.selectedFlight = f;
     }
 
 }

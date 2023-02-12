@@ -34,6 +34,14 @@ oder
 - Visual Studio Code generiert nun eine Datei launch.json und zeigt diese an.
 - Korrigieren Sie in der Datei launch.json die angezeigte URL auf http://localhost:4200:
 
+# FlightApp - Tutorials Angular 03
+
+## Sub-Komponenten mit Event- und Property-Bindings
+`ng g c flight-card`
+``
+`ng generate service flight`
+oder 
+`ng g s flight`
 #
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.
 
