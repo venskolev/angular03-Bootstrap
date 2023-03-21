@@ -10,7 +10,7 @@
       </a>
     </div>
       <ul class="nav">
-        <li class="active">
+        <!-- <li class="active">
             <a href="#" >
                 <p>Home</p>
             </a>
@@ -26,8 +26,26 @@
             <a>
                 <p>Passengers</p>
             </a>
-        </li>
+        </li> -->
+<!-- Diese Einträge um routerLink -->
+<!-- und routerLinkActive erweitern: -->
+<li routerLinkActive="active">
+  <a routerLink="home">
+      <p>Home</p>
+  </a>
+</li>
 
+<li routerLinkActive="active">
+  <a routerLink="flight-search" >
+      <p>Flights</p>
+  </a>
+</li>
+
+<li routerLinkActive="active">
+  <a routerLink="passenger-search">
+      <p>Passengers</p>
+  </a>
+</li>
         <li routerLinkActive="active">
             <a>
                 <p>Basket</p>

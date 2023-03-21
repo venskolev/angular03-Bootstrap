@@ -60,11 +60,16 @@
 				},
 				"serve": {
 					"builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "projectname:build",
+            "port": 3001
+          },
 					"configurations": {
-						"production": {
-							"browserTarget": "flight-app:build:production"
+            "production": {
+              "browserTarget": "flight-app:build:production"
 						},
 						"development": {
+              "host": "vens.selfhost.co",
 							"browserTarget": "flight-app:build:development"
 						}
 					},
